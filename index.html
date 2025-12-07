@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perkenalan Diri</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4F46E5, #6366F1);
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Animasi Fade In */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            width: 90%;
+            max-width: 450px;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 6px 0;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #FFEB99;
+        }
+
+        /* Foto Profil */
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 4px solid rgba(255, 255, 255, 0.4);
+            animation: fadeIn 1.4s ease-out;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- FOTO (ganti src= dengan foto kamu sendiri) -->
+        <img src="https://i.imgur.com/4ZQZ4Z0.png" alt="Foto Profil" class="profile-pic">
+
+        <h1>Perkenalan Diri</h1>
+
+        <p><span class="highlight">NIM:</span> F3401241123</p>
+        <p><span class="highlight">Departemen:</span> Teknik Industri Pertanian</p>
+        <p><span class="highlight">Universitas:</span> IPB University</p>
+        <p><span class="highlight">Minat:</span> Main Musik</p>
+        <p><span class="highlight">Hobi:</span> Main dan Musik</p>
+
+        <div class="footer">Dibuat oleh Arva Zaim </div>
+    </div>
+</body>
+</html>
